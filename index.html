@@ -8,91 +8,63 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 
-<!-- 
-  ⠀⠀⠀⠀⠀⠀⠠⢠⠀⢠⠰⡄⠀⣴⣴⠀⣠⡆⢀⣶⠀⢀⣦⣶⣶⣶⠀⣶⣴⣶⡠⢰⣶⣆⠀⡔⡄⠀⣀⠀⠰⡐⢠⠄⣂⠄⢰⡀⠀⠂
-⠀⠀⠀⠀⠀⠀⠐⠤⢠⠏⡰⢁⣾⣿⣯⣀⠹⣣⣿⣿⡄⡞⣿⣿⣿⣿⢾⣿⣿⣿⣿⣾⣷⣧⣲⣿⣷⣠⡏⡆⠈⡃⠈⡄⠠⡘⠢⠉⠁⠀
-⠀⠀⠀⠀⠀⠒⠲⠠⠃⠠⡴⢾⣿⣿⣿⣿⡷⢻⣿⣿⣿⣿⣿⣿⢟⢅⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡗⢰⡀⠀⠐⠀⠁⠐⠀⠄⠀
-⠀⠀⠀⠀⡀⢐⠀⡀⡀⠀⠀⠈⠉⠙⠛⠻⢿⣽⣿⣿⣿⣿⣿⡏⣰⣿⡿⣿⣿⠿⠿⠿⠿⠿⠿⠿⠿⣿⣿⣿⣾⣷⠀⠀⢀⡤⠀⠀⠈⠀
-⠀⠀⠀⠀⠑⠴⡨⠂⠐⠀⠀⠁⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⡿⣙⠫⢑⡀⣀⠤⠠⣒⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⠆⠀⠜⡇⠀⠀⠀⠀
-⠀⠀⠀⠀⣉⢁⡀⠀⠂⠂⠶⠂⢄⢀⠀⠀⠀⠣⢿⣿⣿⣿⣧⡽⡁⠃⠀⠀⡚⣺⣯⣤⣤⣴⣾⣭⣭⣿⣿⣿⣿⣿⠃⠎⡜⡇⠀⠀⠀⠀
-⠀⠀⢀⡔⢑⣾⡇⠀⠀⠀⡐⢀⡀⠀⠀⠀⠀⠀⠺⣿⣿⣿⣿⡷⡣⠀⠀⠀⢉⡁⠀⠀⠀⢠⣤⣤⣬⣭⣭⣿⣿⣿⠘⡀⢀⠛⠀⠀⠀⠀
-⠀⠀⠈⢊⠜⢻⣿⣦⣤⣴⣿⣧⣱⡀⠕⢀⠀⠀⠀⢹⣿⣿⣿⣿⡷⣧⢂⣼⣿⣧⡀⠀⢀⣼⣿⣿⣿⡏⡑⡿⣻⠃⢨⣇⡽⠃⠀⠀⠀⠀
-⠀⠀⠠⡂⡙⠆⢿⣿⣿⠿⠿⠿⠛⠀⠆⠈⠃⠀⠀⢼⣿⡟⠄⣽⣾⣿⡾⣿⣿⣿⣿⣿⣿⣿⣿⣿⢏⢞⡾⢡⣟⢰⠐⠜⠐⠀⠀⠀⠀⠀
-⠀⠀⠀⠁⠳⢂⣬⣉⣭⣤⣴⡦⡀⠀⠀⠀⠀⠀⠀⢸⣿⡇⠐⠹⢙⡿⣗⠍⠛⡻⠿⠿⠿⠿⢛⣭⡮⠼⠃⣾⠏⠎⡀⡔⠀⠀⠀⠀⠀⠀
-⠀⠀⠠⠛⢖⣶⣭⣿⣿⡿⣋⣘⠄⠀⠄⠀⠂⠀⠀⢸⢿⣿⣿⣿⣦⣝⣶⣭⣊⡵⢶⣾⣿⡿⠟⣋⣤⣾⣿⢯⠰⠔⠾⠁⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣢⣿⣿⣿⣿⣿⣿⣿⣷⠸⠀⠀⡄⠀⠀⠀⢸⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⣿⣿⣿⣿⣿⠄⠐⠀⠁⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠁⠠⣻⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠄⠀⠀⠀⠀⢘⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⢨⣸⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣽⣿⣿⣿⣿⣿⢟⠎⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠈⠽⣻⢿⡿⢋⡂⠀⠨⠀⠄⠀⠀⡀⠄⡴⣷⣆⣽⡼⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠘⢰⠟⠤⠑⢐⠉⠁⠉⠀⠀⠠⠑⠀⢡⠁⠘⣿⡇⡏⣿⣿⣿⣿⣿⣿⣿⣿⡿⡫⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢈⠖⡄⠈⠀⡀⠐⠠⠀⠀⠀⠀⠀⠂⠀⠀⠀⠞⡗⢹⣿⣿⣿⣿⣿⣿⢟⡩⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢄⠀⠀⠀⣄⡀⣠⡭⡢⢛⡛⣻⣿⡿⣋⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠢⠀⠀⠀⠖⠊⢷⢹⡗⣇⡞⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡉⢴⢻⠐⣿⡸⢩⡉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⢣⣿⠠⣟⠟⡏⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⢀⢡⢹⠃⠀⠁⢠⣿⡸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠬⠖⠀⠀⠀⠀⢀⣝⣇⠱⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠀⡄⢘⣀⠀⠀⠀⡀⡀⠈⠚⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠃⠀⠀⠏⠀⠀⠌⠑⠅⠸⡇⡜⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⢨⡇⠠⣳⢃⠨⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠁⠀⠉⢈⡄⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡌⡟⠁⠀⠀⢈⢪⣿⡄⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠖⠀⠀⠀⠀⠀⠀⠀⡀⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠄⠀⠀⠀⠀⠀⠀⠀⠙⠟⣵⠈⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢎⠧⡐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⡆⣉⡚⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠘⠄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
--->
+
 <body>
 
 <div class="page">
+
+  <!-- HEADER -->
   <div class="header-card">
-    <div class="avatar">W</div>
+    <div class="avatar" id="avatar-letter">W</div>
     <div class="header-info">
-      <h1>WAN NURSARINA BINTI WAN NURDIMAN</h1>
-      <p>Diploma in Computer Science</p>
+      <h1 id="display-name">WAN NURSARINA BINTI WAN NURDIMAN</h1>
+      <p id="display-title">Diploma in Computer Science</p>
       <div class="header-divider"></div>
     </div>
+    <button class="edit-btn" onclick="openModal('header')">✏ Edit</button>
   </div>
 
-  <!--contact n edu info -->
   <!-- ROW 1: Contact + Education -->
   <div class="grid">
 
     <div class="card">
       <h2>Contact</h2>
+      <button class="edit-btn" onclick="openModal('contact')">✏ Edit</button>
+
+      <!-- Email: click to copy -->
       <div class="contact-row" onclick="copyToClipboard('wannursarina@gmail.com')" title="Click to copy">
-        <img src="https://static.vecteezy.com/system/resources/previews/020/009/614/non_2x/email-and-mail-icon-black-free-png.png" alt="Phone" width="16" height="16"/>
-        <a href="mailto:youremail@gmail.com">wannursarina@gmail.com</a>
+        <img src="https://static.vecteezy.com/system/resources/previews/020/009/614/non_2x/email-and-mail-icon-black-free-png.png" alt="Email" width="16" height="16"/>
+        <a id="display-email" href="mailto:wannursarina@gmail.com">wannursarina@gmail.com</a>
       </div>
+
+      <!-- Phone: click to copy -->
       <div class="contact-row" onclick="copyToClipboard('019-7244425')" title="Click to copy">
- 
         <img src="https://cdn-icons-png.flaticon.com/512/15/15407.png" alt="Phone" width="16" height="16"/>
-       019-7244425
+        <span id="display-phone">019-7244425</span>
       </div>
+
+      <!-- GitHub: click to open profile in new tab -->
       <div class="contact-row">
         <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" width="16" height="16"/>
-        <a href="https://github.com/wansarina05" target="_blank">github.com/wansarina05</a>
+        <a id="display-github" href="https://github.com/wansarina05" target="_blank">github.com/wansarina05</a>
       </div>
     </div>
 
     <div class="card">
       <h2>Education</h2>
+      <button class="edit-btn" onclick="openModal('education')">✏ Edit</button>
       <div class="edu-entry">
         <span class="arrow">→</span>
         <div>
-          <h4>Diploma in Computer Science</h4>
-          <p>University Poly-Tech Malaysia · Present</p>
+          <h4 id="edu1-title">Diploma in Computer Science</h4>
+          <p id="edu1-sub">University Poly-Tech Malaysia · Present</p>
         </div>
       </div>
       <div class="edu-entry">
         <span class="arrow">→</span>
         <div>
-          <h4>SPM</h4>
-          <p>SMK Taman Setiawangsa - 2024</p>
+          <h4 id="edu2-title">SPM</h4>
+          <p id="edu2-sub">SMK Taman Setiawangsa - 2024</p>
         </div>
       </div>
     </div>
@@ -104,7 +76,8 @@
 
     <div class="card">
       <h2>About me</h2>
-      <p class="about-text">
+      <button class="edit-btn" onclick="openModal('about')">✏ Edit</button>
+      <p class="about-text" id="display-about">
         A motivated Computer Science student with a passion for web designing and problem-solving.
         Eager to apply technical skills to real-world projects and continuously grow as a developer.
         Hardworking, detail-oriented, and always ready to learn new technologies.
@@ -146,12 +119,134 @@
   </div>
 
 </div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeOnBg(event)">
+  <div class="modal" id="modal-box">
+    <h3 id="modal-title">Edit</h3>
+    <div id="modal-fields"></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-save" onclick="saveModal()">Save</button>
+    </div>
+  </div>
+</div>
+
 <script>
+  // ── COPY TO CLIPBOARD ──
   function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(function() {
       alert(text + ' copied to clipboard!');
     });
   }
+
+  // ── EDIT MODAL ──
+  let currentSection = null;
+
+  const fields = {
+    header: {
+      title: 'Edit Header',
+      inputs: [
+        { id: 'name', label: 'Full Name', type: 'input',
+          get: () => document.getElementById('display-name').textContent.trim() },
+        { id: 'subtitle', label: 'Subtitle / Degree', type: 'input',
+          get: () => document.getElementById('display-title').textContent.trim() }
+      ],
+      save: (vals) => {
+        document.getElementById('display-name').textContent = vals.name;
+        document.getElementById('display-title').textContent = vals.subtitle;
+        document.getElementById('avatar-letter').textContent = vals.name.trim()[0].toUpperCase();
+      }
+    },
+    contact: {
+      title: 'Edit Contact',
+      inputs: [
+        { id: 'email', label: 'Email', type: 'input',
+          get: () => document.getElementById('display-email').textContent.trim() },
+        { id: 'phone', label: 'Phone Number', type: 'input',
+          get: () => document.getElementById('display-phone').textContent.trim() },
+        { id: 'github', label: 'GitHub (e.g. github.com/username)', type: 'input',
+          get: () => document.getElementById('display-github').textContent.trim() }
+      ],
+      save: (vals) => {
+        const emailEl = document.getElementById('display-email');
+        emailEl.textContent = vals.email;
+        emailEl.href = 'mailto:' + vals.email;
+
+        document.getElementById('display-phone').textContent = vals.phone;
+
+        const githubEl = document.getElementById('display-github');
+        githubEl.textContent = vals.github;
+        githubEl.href = 'https://' + vals.github.replace(/^https?:\/\//, '');
+      }
+    },
+    education: {
+      title: 'Edit Education',
+      inputs: [
+        { id: 'edu1t', label: 'Qualification 1', type: 'input',
+          get: () => document.getElementById('edu1-title').textContent.trim() },
+        { id: 'edu1s', label: 'Institution & Year 1', type: 'input',
+          get: () => document.getElementById('edu1-sub').textContent.trim() },
+        { id: 'edu2t', label: 'Qualification 2', type: 'input',
+          get: () => document.getElementById('edu2-title').textContent.trim() },
+        { id: 'edu2s', label: 'Institution & Year 2', type: 'input',
+          get: () => document.getElementById('edu2-sub').textContent.trim() }
+      ],
+      save: (vals) => {
+        document.getElementById('edu1-title').textContent = vals.edu1t;
+        document.getElementById('edu1-sub').textContent = vals.edu1s;
+        document.getElementById('edu2-title').textContent = vals.edu2t;
+        document.getElementById('edu2-sub').textContent = vals.edu2s;
+      }
+    },
+    about: {
+      title: 'Edit About Me',
+      inputs: [
+        { id: 'about', label: 'About Me', type: 'textarea',
+          get: () => document.getElementById('display-about').textContent.trim() }
+      ],
+      save: (vals) => {
+        document.getElementById('display-about').textContent = vals.about;
+      }
+    }
+  };
+
+  function openModal(section) {
+    currentSection = section;
+    const cfg = fields[section];
+    document.getElementById('modal-title').textContent = cfg.title;
+    const container = document.getElementById('modal-fields');
+    container.innerHTML = '';
+    cfg.inputs.forEach(f => {
+      const lbl = document.createElement('label');
+      lbl.textContent = f.label;
+      lbl.setAttribute('for', 'mf-' + f.id);
+      container.appendChild(lbl);
+      const el = document.createElement(f.type === 'textarea' ? 'textarea' : 'input');
+      el.id = 'mf-' + f.id;
+      el.value = f.get();
+      container.appendChild(el);
+    });
+    document.getElementById('modal-overlay').classList.add('open');
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    currentSection = null;
+  }
+
+  function closeOnBg(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  }
+
+  function saveModal() {
+    const cfg = fields[currentSection];
+    const vals = {};
+    cfg.inputs.forEach(f => { vals[f.id] = document.getElementById('mf-' + f.id).value; });
+    cfg.save(vals);
+    closeModal();
+  }
 </script>
+
 </body>
 </html>
